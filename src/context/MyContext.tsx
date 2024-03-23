@@ -8,11 +8,13 @@ type Product = {
 }
 
 type MyContextData = {
-    
+   product: [];
+   setproduct: (num : number) => void 
 }
 
 const MyContext = React.createContext<MyContextData>({
-
+    product: [],
+    setproduct: () => {},
 });
 
 export default MyContext;
